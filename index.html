@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container ">
+        <div class="nav">
+        <div class="logo">
+          <img src="/images/log.png" alt="logo" />
+        </div>
+        <div class="navlist">
+          <ul>
+            <li>
+              <span>
+                <img class="same motion" src="/images/discount.png" />
+                <i class="fas fa-percent center"></i
+              ></span>
+              <div>
+                <p class="font12">Super Offers</p>
+                <p class="font10">Explore great deals & offers</p>
+              </div>
+            </li>
+            <li class="dotted">
+              <img class="wd44" src="/images/mybiz.png" />
+              <div>
+                <p class="font12 f-w700">Introducing MyBiz</p>
+                <p class="font10">Business Travel Solution</p>
+              </div>
+            </li>
+            <li>
+              <img
+                class="same"
+                src="/images/trolley-removebg-preview.png"
+                href="/"
+              />
+
+              <div>
+                <p class="font12">My Trips</p>
+                <p class="font10">Manage Your Bookings</p>
+              </div>
+            </li>
+
+            <li class="log-bar">
+              <img class="same" src="/images/myround.png" />
+              <span class="font10">Log Or Create Account</span>
+            </li>
+            <li class="country">
+              <div class="side-bar">
+                <img class="flag-image" src="/images/flag (1).jpg" />
+                <span class="font11"> IN</span>
+                <span class="font11 border-RL">ENG</span>
+                <span class="font11">INR</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="service">
+        <div class="service-list">
+          <ul>
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-plane-departure size"></i></span>
+                <p class="pt">Flight</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-hotel size"></i></span>
+                <p class="pt">Hotels</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-home size"></i></span>
+                <p class="pt">HomeStays</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-parachute-box size"></i></span>
+                <p class="pt">Holiday Packages</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-subway size"></i></span>
+                <p class="pt">Train</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-bus size"></i></span>
+                <p class="pt">Buses</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-car size"></i></span>
+                <p class="pt">Cabs</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-money-bill size"></i></span>
+
+                <p class="pt">Forex</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-plane size"></i></span>
+                <p class="pt">Charter Flights</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <span><i class="fas fa-hiking size"></i></span>
+                <p class="pt">Activities</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="booking-section">
+        <div class="booking-options">
+          <div class="selection">
+            <div class="status radio-active">
+              <input
+                type="radio"
+                id="ticket"
+                name="radio-btn"
+                value="HTML"
+                checked
+              />
+                <label for="ticket">BOOK TRAIN TICKET</label><br />
+               
+            </div>
+            <div class="status">
+              <input
+                type="radio"
+                id="pnr-status"
+                name="radio-btn"
+                value="CSS"
+              />
+                <label for="pnr-status">CHECK PNR STATUS</label><br />
+                
+            </div>
+            <div class="status">
+              <input
+                type="radio"
+                id="train-status"
+                name="radio-btn"
+                value="JavaScript"
+              />
+                <label for="train-status">LIVE TRAIN STATUS</label>
+            </div>
+             
+          </div>
+
+          <div>
+            <p class="font14 f-w700">Train Ticket Booking</p>
+            <p class="font12 grey-color">IRCTC Authorized e-ticketing</p>
+          </div>
+        </div>
+        <div class="booking-details">
+          <div class="booking-details-from padding-8 text-left">
+            <form autocomplete="off">
+              <div>
+                <label for="html"
+                  ><span class="font14 color-grey">FROM</span></label
+                ><br />
+                <input
+                  type="text"
+                  id="from"
+                  class="from"
+                  name="fav_language"
+                  value=""
+                />
+              </div>
+              <ul class="place-list"></ul>
+            </form>
+          </div>
+
+          <div class="booking-details-to padding-8 text-left">
+            <form autocomplete="off">
+              <label for="html"><span class="font14 color-grey">TO</span></label
+              ><br />
+              <input type="text" id="to" name="fav_language" value="" />
+              <ul class="to-list"></ul>
+            </form>
+            <!-- <div class="error-message"> 
+              <span>from and to can't be the same</span>
+            </div> -->
+          </div>
+
+          <div class="booking-details-travel-date padding-8 text-left">
+            <form autocomplete="off">
+              <label for="html"
+                ><span class="font14 color-grey">TRAVEL DATE</span></label
+              ><br />
+              <input type="date" id="date" name="fav_language" value="" />
+            </form>
+          </div>
+
+          <div class="booking-details-class padding-8 text-left">
+            <form autocomplete="off">
+              <label for="html"
+                ><span class="font14 color-grey">CLASS</span></label
+              ><br />
+              <select id="class">
+                <option class="train-class">First Class</option>
+                <option class="train-class">Second Class</option>
+                <option class="train-class">Third Class</option>
+                <option class="train-class">EconomyClass</option>
+                <option class="train-class">Sleeper Class</option>
+                <option class="train-class">Ac chair car</option>
+                <option class="train-class">Third Ac Economy</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="search-btn">
+        <a href="">SEARCH</a>
+      </div>
+    </header>
+
+    <!-- <========advertise image=========> -->
+
+    <section class="advertise-sec">
+      <div class="ads-image bg-grey">
+        <img src="/images/ads.png" alt="loading" />
+      </div>
+    </section>
+    <!-- <=======service-provided=======> -->
+
+    <section class="service-provided bg-grey">
+      <div class="container bgwhite pd-tb">
+        <div class="options">
+          <div class="list-items">
+            <h2 class="font42">Offers</h2>
+
+            <ul class="sevice-list">
+              <li><a href="##" class="pd-b">TRAINS</a></li>
+              <li><a href="#" class="pd-b">ALL OFFERS</a></li>
+              <li><a href="#" class="pd-b">HOTELS</a></li>
+              <li><a href="#" class="pd-b">FLIGHTS</a></li>
+              <li><a href="#" class="pd-b">HOLIDAYS</a></li>
+              <li><a href="#" class="pd-b">BUS</a></li>
+              <li><a href="#" class="pd-b">CABS</a></li>
+            </ul>
+          </div>
+          <span class="flex">View ALL<i class="fa fa-arrow-right"></i></span>
+        </div>
+
+        <div class="slider-container-item m-tp-bt">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-item">
+                  <div class="slider-list">
+                    <img src="/images/train.jpg" alt="loading" />
+                    <div class="desc pd-lf">
+                      <p class="font15">Trip Guarantee on Trains!</p>
+                      <p class="font-14">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, distinctio.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <span class="font-color">T&C Apply</span>
+                    <span><a href="#" class="color-blue">Know More</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                  <div class="slider-list">
+                    <img src="/images/train2.jpg" alt="loading" />
+                    <div class="desc pd-lf">
+                      <p class="font15">To Book Your Train Journeys with Us:</p>
+                      <p class="font-14">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, distinctio.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <span class="font-color">T&C Apply</span>
+                    <span><a href="#" class="color-blue">Explore Now</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                  <div class="slider-list">
+                    <img src="/images/train2.jpg" alt="loading" />
+                    <div class="desc pd-lf">
+                      <p class="font15">Free Cancellation on Train Bookings!</p>
+                      <p class="font-14">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, distinctio.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <span class="font-color">T&C Apply</span>
+                    <span
+                      ><a href="#" class="color-blue">Visit Details</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                  <div class="slider-list">
+                    <img src="/images/beach3.jpg" alt="loading" />
+                    <div class="desc pd-lf">
+                      <p class="font15">
+                        #DealsOnWheels: Get Up to Rs. 40 OFF* on Train
+                      </p>
+                      <p class="font-14">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, distinctio.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <span class="font-color">T&C Apply</span>
+                    <span><a href="#" class="color-blue">Know More</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                  <div class="slider-list">
+                    <img src="/images/train.jpg" alt="loading" />
+                    <div class="desc pd-lf">
+                      <p class="font15">
+                        Enjoy Power-packed Deals for Your Next Trip:
+                      </p>
+                      <p class="font-14">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, distinctio.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <span class="font-color">T&C Apply</span>
+                    <span><a href="#" class="color-blue">Explore Nowe</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                  <div class="slider-list">
+                    <img src="/images/train.jpg" alt="loading" />
+                    <div class="desc pd-lf">
+                      <p class="font15">
+                        Enjoy Power-packed Deals for Your Next Trip:
+                      </p>
+                      <p class="font-14">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, distinctio.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <span class="font-color">T&C Apply</span>
+                    <span><a href="#" class="color-blue">Know More</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                  <div class="slider-list">
+                    <img src="/images/train2.jpg" alt="loading" />
+                    <div class="desc pd-lf">
+                      <p class="font15">
+                        INSIDE: BIG Discounts on Flights, Hotels, Holidays
+                      </p>
+                      <p class="font-14">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, distinctio.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <span class="font-color">T&C Apply</span>
+                    <span><a href="#" class="color-blue">Know More</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                  <div class="slider-list">
+                    <img src="/images/beach2.jpg" alt="loading" />
+                    <div class="desc pd-lf">
+                      <p class="font15">
+                        INSIDE: BIG Discounts on Flights, Hotels, Holidays.
+                      </p>
+                      <p class="font-14">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, distinctio.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <span class="font-color">T&C Apply</span>
+                    <span><a href="#" class="color-blue">Know More</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                  <div class="slider-list">
+                    <img src="/images/beach3.jpg" alt="loading" />
+                    <div class="desc pd-lf">
+                      <p class="font15">
+                        INSIDE: BIG Discounts on Flights, Hotels, Holidays
+                      </p>
+                      <p class="font-14">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis, distinctio.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <span class="font-color">T&C Apply</span>
+                    <span><a href="#" class="color-blue">Explore Now</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev prev"></div>
+            <div class="swiper-button-next next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="title-part">
+        <div class="container">
+          <div class="title-banner">
+            <img src="/images/travelLoan.png" class="travel" alt="loading" />
+
+            <div class="sub-side">
+              <img src="/images/trip.png" alt="" />
+              <p class="font20 pd-b">
+                <span class="bold">Forex</span> best exchange rates delivered at
+                your doorstep
+              </p>
+            </div>
+            <a href="#" class="flex"
+              >ORDER NOW<i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <=========offers-provided=========> -->
+
+    <section class="offers-provided">
+      <div class="container-fluid bg-grey">
+        <div class="container">
+          <div class="Offers sect-padding">
+            <p class="font10 pd-b">PRODUCT OFFERING</p>
+
+            <span class="font-12">
+              Flights, International Flights, Charter Flights, Hotels,
+              International Hotels, Homestays and Villas, Activities, Holidays
+              In India, International Holidays, Book Hotels From UAE, myBiz for
+              Corporate Travel, Book Online Cabs, Book Bus Tickets, Book Train
+              Tickets, Cheap Tickets to India, Book Flights From US, Book
+              Flights From UAE, Trip Planner, Gift Cards, Trip Money, Trip
+              Ideas, Travel Blog, PNR Status, One Way Cab</span
+            >
+          </div>
+          <div class="Offers sect-padding">
+            <p class="font10 pd-b">MAKEMYTRIP</p>
+
+            <span class="font-12">
+              About Us, Investor Relations, Careers, MMT Foundation, CSR Policy,
+              myPartner - Travel Agent Portal, Foreign Exchange, List your
+              hotel, Partners- Redbus, Partners- Goibibo</span
+            >
+          </div>
+          <div class="Offers sect-padding">
+            <p class="font10 pd-b">ABOUT THE SITE</p>
+
+            <span class="font-12"
+              >IRCTC Train Ticket, Southern Railway, Western Railway, RCTC Seat
+              Availability, Railway Time Table, Indian Railway Stations, Taktal
+              Reservation, Garib Rath, Shatabdi Express, Duronto Express,
+              Rajdhani Express, Live Train Status, Gomti Express, Shalimar
+              Express, Vande Bharat Express, Gatimaan Express, Gitanjali
+              Express, Sabari Express, Avadh Express, Vivek Express, Tejas
+              Express, Intercity Express, Tapti Ganga Express</span
+            >
+          </div>
+          <div class="Offers sect-padding">
+            <p class="font10 pd-b">IMPORTANT LINKS</p>
+
+            <span class="font-12"
+              >Bangalore to Mysore Trains, Mumbai to Goa Trains, Pune to Mumbai
+              Trains, Delhi to Jaipur Trains, Hyderabad to Tirupati Trains,
+              Delhi to Agra Trains, Bangalore to Goa Trains, Bangalore to
+              Chennai Trains, Mumbai to Ahmedabad Trains, Mumbai to Delhi
+              Trains, Pune to Goa Trains, Hyderabad to Bangalore Trains, Delhi
+              to Amritsar Trains, Jaipur To Goa Trains, Kolkata To Goa Trains,
+              Lakhimpur To Lucknow Train</span
+            >
+          </div>
+          <div class="Offers sect-padding">
+            <p class="font10 pd-b">QUICK LINKS</p>
+
+            <span class="font-12">
+              Flights, International Flights, Charter Flights, Hotels,
+              International Hotels, Homestays and Villas, Activities, Holidays
+              In India, International Holidays, Book Hotels From UAE, myBiz for
+              Corporate Travel, Book Online Cabs, Book Bus Tickets, Book Train
+              Tickets, Cheap Tickets to India, Book Flights From US, Book
+              Flights From UAE, Trip Planner, Gift Cards, Trip Money, Trip
+              Ideas, Travel Blog, PNR Status, One Way Cab</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us bg-grey sect-padding">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="about-desc padding-topbot">
+            <div class="left-side-content padding-topbot">
+              <p class="pd-b font16">Book Train Tickets Without Any Hassle</p>
+              <span class="font-12">
+                Traveling by train is a popular choice for both short commutes
+                and longer journeys, and for a good reason. With over a thousand
+                routes connecting cities in India, traveling by train is the
+                most convenient mode of travel. The combination of price,
+                convenience, and speed makes train travel a sweet spot for
+                discerning travelers. Travelers can now search routes, check
+                fares and book train tickets with MakeMyTrip’s train booking
+                system. Moreover, you can also use the MakeMyTrip’s app for easy
+                access to train tickets booking. Planning a trip across India
+                should be fun and easy. That’s why, MakeMyTrip guarantees a
+                hassle-free booking process for booking your train tickets. You
+                can have your train tickets book on MakeMyTrip from the comfort
+                of your homes.</span
+              >
+            </div>
+            <div class="right-side-content padding-topbot">
+              <p class="pd-b font16">Easy IRCTC Train Booking</p>
+              <span class="font-12"
+                >Indian Railways is among the world’s largest rail networks with
+                an operating route length of more than 65,000 km. IRCTC (Indian
+                Railway Catering and Tourism Corporation) is the face of India's
+                online train tickets booking system. MakeMyTrip is the leading
+                portal for booking IRCTC train tickets online which is offering
+                the most convenient ways to book train tickets, check train
+                schedule, train availability, and view live train status. IRCTC
+                has been the most used website for train tickets booking. It has
+                seen the largest footfall in their websites and thus to make the
+                experience even better for the customers we have stepped in to
+                make it an easy solution. With us, you can now book train
+                tickets with confirmed status, add meals and even grab great
+                deals on booking.</span
+              >
+            </div>
+          </div>
+          <div class="about-desc padding-topbot">
+            <div class="left-side-content padding-topbot">
+              <p class="pd-b font16">
+                How Book Train Tickets Online with MakeMyTrip
+              </p>
+              <span class="font-12">
+                Having confusion on how to book your train tickets online?
+                process of booking your tickets in simple easy steps.</span
+              >
+              <p class="font-12">
+                Step 1: Log in to our website and select the train icon. Under
+                the ‘book train tickets’ section, choose your city and its
+                station where you will depart from and arrive at.
+              </p>
+
+              <p class="font-12">
+                Step 2: Then select the date of departure and choose from the
+                preferred class of train travel. You can choose between Sleeper
+                Class, Third Class, First AC, Second AC, Third AC, AC Chair car,
+                and so on. Remember, while you book train tickets, the train
+                fare varies according to the class of travel you choose.
+              </p>
+
+              <p class="font-12">
+                Step 3: You can now see all the updated train details with their
+                schedule and availability. You can filter out by pricing,
+                departure time, date, travel class, train types, and even
+                stations.
+              </p>
+
+              <p class="font-12">
+                Step 4: Once you choose your desired train, you now reach the
+                review page where you can fill up your details, berth
+                preference, and also check the booking details and total amount.
+                You can also avail free cancellation policy and travel insurance
+                exclusive available on MakeMyTrip.
+              </p>
+
+              <p class="font-12">
+                Step 5: To proceed further, you will need to put your IRCTC
+                login details. If you don’t have your IRCTC username, you can
+                always create a new one by adding the details.
+              </p>
+
+              <p class="font-12">
+                Step 6: The final step is to add coupon codes (if you have any)
+                and proceed to pay. After selecting the mode of payment, you
+                will be redirected to IRCTC for authentication. All you need to
+                do is type in your password and have your tickets delivered to
+                your mailbox.
+              </p>
+            </div>
+            <div class="right-side-content padding-topbot">
+              <p class="pd-b font16">Check Your PNR Statusg</p>
+              <span class="font-12"
+                >Indian Railways is among the world’s largest rail networks with
+                an operating route length of more than 65,000 km. IRCTC (Indian
+                Railway Catering and Tourism Corporation) is the face of India's
+                online train tickets booking system. MakeMyTrip is the leading
+                portal for booking IRCTC train tickets online which is offering
+                the most convenient ways to book train tickets, check train
+                schedule, train availability, and view live train status. IRCTC
+                has been the most used website for train tickets booking. It has
+                seen the largest footfall in their websites and thus to make the
+                experience even better for the customers we have stepped in to
+                make it an easy solution. With us, you can now book train
+                tickets with confirmed status, add meals and even grab great
+                deals on booking.</span
+              >
+            </div>
+          </div>
+          <div class="about-desc padding-topbot">
+            <div class="left-side-content padding-topbot">
+              <p class="pd-b font16">
+                Why should you book Train Tickets with MakeMyTrip
+              </p>
+              <span class="font-12">
+                Traveling by train is a popular choice for both short commutes
+                and longer journeys, and for a good reason. With over a thousand
+                routes connecting cities in India, traveling by train is the
+                most convenient mode of travel. The combination of price,
+                convenience, and speed makes train travel a sweet spot for
+                discerning travelers. Travelers can now search routes, check
+                fares and book train tickets with MakeMyTrip’s train booking
+                system. Moreover, you can also use the MakeMyTrip’s app for easy
+                access to train tickets booking. Planning a trip across India
+                should be fun and easy. That’s why, MakeMyTrip guarantees a
+                hassle-free booking process for booking your train tickets. You
+                can have your train tickets book on MakeMyTrip from the comfort
+                of your homes.</span
+              >
+            </div>
+            <div class="right-side-content padding-topbot">
+              <p class="pd-b font16">
+                Hassle-free Train Ticket Booking on MakeMyTrip
+              </p>
+              <span class="font-12"
+                >Indian Railways is among the world’s largest rail networks with
+                an operating route length of more than 65,000 km. IRCTC (Indian
+                Railway Catering and Tourism Corporation) is the face of India's
+                online train tickets booking system. MakeMyTrip is the leading
+                portal for booking IRCTC train tickets online which is offering
+                the most convenient ways to book train tickets, check train
+                schedule, train availability, and view live train status. IRCTC
+                has been the most used website for train tickets booking. It has
+                seen the largest footfall in their websites and thus to make the
+                experience even better for the customers we have stepped in to
+                make it an easy solution. With us, you can now book train
+                tickets with confirmed status, add meals and even grab great
+                deals on booking.</span
+              >
+            </div>
+          </div>
+
+          <div class="about-desc sect-padding-60">
+            <p class="pd-b font16">
+              Frequently Asked Questions About IRCTC Ticket Booking
+            </p>
+          </div>
+          <div class="about-desc padding-topbot">
+            <div class="left-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. Why Book Train Tickets Online With MakeMyTrip?
+              </p>
+              <span class="font-12">
+                A. MakeMyTrip, India's leading travel portal is the best way to
+                book train tickets online. No matter where you are in the
+                country, make a hassle-free railway reservation from us using
+                your computer or smartphone. Along with it, you can avail
+                exciting discounts on your first time of booking but also get
+                them on the following rail tickets. Additionally, you will have
+                all the updated information of the seats and classes of trains
+                that are available to book.</span
+              >
+            </div>
+            <div class="right-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. What is the process for booking online train tickets?
+              </p>
+              <span class="font-12"
+                >A. For booking train tickets from MakeMyTrip, enter the name of
+                the city, station name or station code of the cities you will
+                depart from and arrive at. From the updated list of trains
+                available, choose your preferred class of travel. While making
+                the railway reservation on our app or website, you would need to
+                add your IRCTC username. This verification process is important.
+                It makes sure that your</span
+              >
+            </div>
+          </div>
+          <div class="about-desc padding-topbot">
+            <div class="left-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. How many people can I book in a single train ticket booking?
+              </p>
+              <span class="font-12">
+                A. In one IRCTC ticket booking, there can be a maximum of only
+                six passengers. You can easily add the names and ages of the
+                ones along with whom you are travelling. By hitting on the edit
+                button next to the names, choose each passenger's berth
+                preference. You can also add the other passenger's meal choices
+                on the app. Along with that you also have a few options when it
+                comes to train reservations of six people in a single ticket.
+                You can choose to book when all the berths are in the same coach
+                or if only one or two lower berths are provided.</span
+              >
+            </div>
+            <div class="right-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. How can I cancel my rail tickets at MakeMyTrip?
+              </p>
+              <span class="font-12"
+                >A. If you have to cancel your train ticket that you have
+                booked, it is easy to do it on the app and our website. All you
+                have to do is visit your profile. Go to the My Trips section to
+                see your booking details. Click on the View & Manage Booking
+                section to see all your ticket details. Along with it, you will
+                have the options of cancelling your railway ticket booking.
+                There is also a partial booking option, provided more people are
+                under the same ticket. If you are unable to board the train and
+                need a refund, you can check the TDR (Ticket Deposit Receipt)
+                Procedure section.</span
+              >
+            </div>
+          </div>
+          <div class="about-desc padding-topbot">
+            <div class="left-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. Are children charged for train tickets booking?
+              </p>
+              <span class="font-12"
+                >A. Children under five years of age are not charged for train
+                reservation. However, the full fare is charged for those between
+                five to 12 years of age. The charge is only applicable if, at
+                the time of reservation, a berth is sought for the child
+                separately. Then again, if there is no seat or berth sought for
+                the child who is between the abovementioned age group, only half
+                of the adult fare will be charged.</span
+              >
+            </div>
+            <div class="right-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. What documents or ID Cards required for online train ticket
+                booking?
+              </p>
+              <span class="font-12"
+                >A. While you are booking your railway ticket online, you are
+                not required to provide any photo identity card detail. However,
+                you would need to carry one of the identity cards while you are
+                travelling, which includes, Voter photo identity card that has
+                been issued by the Election Commission of India, Passport,
+                Driving Licence that has been issued by RTO, PAN Card that has
+                been issued by Income Tax Department, Student Identity Card with
+                the student's photograph issued by the school or college,
+                National Bank Passbook with photographs, Credit Cards issued by
+                banks with laminated photographs & Aadhaar Card.</span
+              >
+            </div>
+          </div>
+          <div class="about-desc padding-topbot">
+            <div class="left-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. What is the cancellation policy for train bookings? Will I
+                get any refund?
+              </p>
+              <span class="font-12"
+                >A. Canceling a train ticket on the MakeMyTrip app or website is
+                a hassle-free experience. If your booking is backed by
+                MakeMyTrip’s free cancellation policy and you cancel the trip
+                within the specified time frame, you get a full refund for your
+                booking. Also, MakeMyTrip offers ‘Trip Guarantee’, which allows
+                you to change the trip details, including your date of travel,
+                for certain routes and bookings. Please go through the
+                cancellation policy of your booking for more details.</span
+              >
+            </div>
+            <div class="right-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. How can I book my train ticket on mobile?
+              </p>
+              <span class="font-12"
+                >A. You can book your train ticket using MakeMyTrip. All you
+                have to do is enter your source and destination and use your
+                IRCTC login ID to confirm your train tickets. You would receive
+                your e-ticket on mobile.</span
+              >
+            </div>
+          </div>
+          <div class="about-desc padding-topbot">
+            <div class="left-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. How can I check the reservation status of my train ticket?
+              </p>
+              <span class="font-12"
+                >A. MakeMyTrip allows you to check the reservation status of
+                your train ticket by simply typing your 10-digit PNR
+                number.</span
+              >
+            </div>
+            <div class="right-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. Do children get any discount on IRCTC train tickets?
+              </p>
+              <span class="font-12"
+                >A. IRCTC doesn’t charge children below the age of 5. For
+                children who are above 5 years, you’d have to pay the full
+                ticket fare, and they will be provided with a seat.</span
+              >
+            </div>
+          </div>
+          <div class="about-desc padding-topbot">
+            <div class="left-side-content padding-topbot">
+              <p class="pd-b font16">
+                Q. How many days in advance can the rail tickets be booked?
+              </p>
+              <span class="font-12"
+                >A. You can make your IRCTC train ticket booking 120 days in
+                advance.</span
+              >
+            </div>
+            <div class="right-side-content padding-topbot">
+              <p class="pd-b font16">Q. Can I book a tatkal ticket?</p>
+              <span class="font-12"
+                >A. Yes, you can book your tatkal ticket on MakeMyTrip in case
+                of emergencies or last-minute travel plans. The tatkal window
+                opens for an hour.</span
+              >
+            </div>
+          </div>
+          <div class="makegrid padding-topbot">
+            <p class="pd-b font16">
+              Q. Does MakeMyTrip offer the running status of the train?
+            </p>
+            <span class="font-12"
+              >A. Yes, we offer the ‘Live Train Status’ feature. You can check
+              the live train status on MakeMyTrip by simply entering your train
+              name or number.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="end-section bg-black">
+      <div class="container-fluid">
+        <div class="container end-page">
+          <div class="social-icon">
+            <span class="icons"
+              ><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i
+            ></span>
+          </div>
+          <div>
+            <p class="font-16">© 2023 MAKEMYTRIP PVT. LTD.</p>
+            <p class="font14 pd-top">
+              Country <span class="bold">India USA UAE</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swip er JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/main.js"></script>
+    <script src="/autocomplete.js"></script>
+
+    <script></script>
+  </body>
+</html>
